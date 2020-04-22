@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:text="Submit"
+        android:onClick="submit"
         android:background="@drawable/burger_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
