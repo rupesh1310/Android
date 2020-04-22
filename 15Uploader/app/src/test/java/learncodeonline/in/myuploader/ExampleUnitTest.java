@@ -1,4 +1,4 @@
-package rupesh1310.github.uploader;
+package learncodeonline.in.myuploader;
 
 import org.junit.Test;
 
