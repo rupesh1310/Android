@@ -1,6 +1,7 @@
 package rupesh1310.github.recyclercards;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -32,10 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         //config for recyclerView
+        recyclerView = findViewById(R.id.recyclerView);
+        //Performance
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        adapter = new ExampleAdapter(exampleList);
 
 
-
-
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
 
 
 

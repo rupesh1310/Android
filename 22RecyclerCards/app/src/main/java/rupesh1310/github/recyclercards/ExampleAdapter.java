@@ -52,7 +52,7 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ExampleViewHolder exampleViewHolder, int position) {
+    public void onBindViewHolder(@NonNull ExampleViewHolder exampleViewHolder, int i) {
         //7
         ExampleItem currentItem = mExampleList.get(i);
         exampleViewHolder.imageView.setImageResource(currentItem.getmImageResource());
