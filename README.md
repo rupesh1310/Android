@@ -5,9 +5,9 @@
   Android Learning
   <br>
 </h1>
-<h4 align="center">An awesome repository of beginner level applications to learn android <a href="https://nodejs.org/en/" target="_blank">Android Development</a>.</h4>
+<h4 align="center">An awesome repository of beginner level applications to learn android <a href="https://developer.android.com/studio/intro" target="_blank">Android Development</a>.</h4>
  <p align="center">
-  <a href="#key-features">Key Features of the Application</a> •
+  <a href="#key-features">Key Features of all the Application</a> •
   <a href="#demonstration">Demonstration</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#api-usage">API Usage</a> •
