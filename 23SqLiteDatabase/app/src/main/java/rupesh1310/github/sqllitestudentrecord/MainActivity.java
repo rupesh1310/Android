@@ -3,6 +3,7 @@ package rupesh1310.github.sqllitestudentrecord;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         buttonGetData = findViewById(R.id.button_view);
         buttonViewAll = findViewById(R.id.button_viewAll);
 
+        AddData();
+        getData();
+
     }
     public void AddData(){
         buttonAdd.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +53,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void getData(){
+        buttonGetData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String id = editTextId.getText().toString();
 
+                if(id.equals(String.valueOf(""))){
+                    editTextId.setError("Enter ID");
+                    return;
+                }
+                Cursor cursor = myDB.getData(id);
+                String data = null;
+
+                if(cursor.moveToNext()){
+                    data = "ID: "+ cursor.getString(0) +"\n"+
+                            "NAME: "+ cursor.getString(1) +"\n"+
+                            "Email: "+ cursor.getString(2) +"\n"+
+                            "Course Count: "+ cursor.getString(3) +"\n";
+                }
+                showMessage("Data: ", data);
+            }
+        });
+    }
 
 
 
