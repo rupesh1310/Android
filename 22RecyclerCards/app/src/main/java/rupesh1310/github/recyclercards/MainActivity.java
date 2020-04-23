@@ -10,6 +10,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    ArrayList<ExampleItem> exampleList;
+
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -20,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<ExampleItem> exampleList = new ArrayList<>();
+        generateFakeData();
+        recyclerViewConfig();
+
+    }
+
+    public void generateFakeData(){
+
+        exampleList = new ArrayList<>();
 
         exampleList.add(new ExampleItem(R.drawable.node, "Clicked at Studio"));
         exampleList.add(new ExampleItem(R.drawable.oner, "Clicked at Italy"));
@@ -30,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         exampleList.add(new ExampleItem(R.drawable.fiver, "Clicked at Santorini"));
         exampleList.add(new ExampleItem(R.drawable.sixr, "Clicked at India"));
 
+    }
 
+    public void recyclerViewConfig() {
 
         //config for recyclerView
         recyclerView = findViewById(R.id.recyclerView);
@@ -42,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
-
-
 
     }
 }
