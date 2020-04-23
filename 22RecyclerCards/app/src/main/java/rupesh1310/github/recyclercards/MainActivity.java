@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //config for recyclerView
-        
+
 
 
 
