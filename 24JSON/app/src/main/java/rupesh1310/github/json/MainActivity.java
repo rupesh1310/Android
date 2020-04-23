@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Gson gson = new Gson();
-        Student student = new Student("Rupesh", 5, "a@gmail.com");
+//        Student student = new Student("Rupesh", 5, "a@gmail.com");
+//
+//        String json = gson.toJson(student);
 
-        String json = gson.toJson(student);
-
-        Log.d("TEST", json);
+        String json = "{\"course_count\":5, \"email\":\"a@gmail.com\",\"name\":\"Rupesh\"}";
+        Student student = gson.fromJson(json, Student.class);
+        Log.d("TEST", student.toString());
 
 
 
