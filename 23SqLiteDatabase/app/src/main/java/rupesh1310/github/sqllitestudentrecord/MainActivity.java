@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         AddData();
         getData();
         ViewAll();
-
+        updateData();
+        deleteButton();
     }
     public void AddData(){
         buttonAdd.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +100,40 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void updateData(){
+        buttonUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isUpdate = myDB.updateData(editTextId.getText().toString(),
+                        editName.getText().toString(),
+                        editEmail.getText().toString(),
+                        editCC.getText().toString());
+
+                if(isUpdate == true){
+                    Toast.makeText(MainActivity.this, "Updated Successfully", Toast.LENGTH_SHORT).show();
+                } else {
+
+                    Toast.makeText(MainActivity.this, "OOPPS!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+    public void deleteButton(){
+        buttonDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO: ID should not be empty
+                Integer deleteRow = myDB.deleteData(editTextId.getText().toString());
+                if (deleteRow > 0) {
+                    Toast.makeText(MainActivity.this, "Delete success", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "OOPPS!", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
+    }
+
 
 
 
