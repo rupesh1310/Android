@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         AddData();
         getData();
+        ViewAll();
 
     }
     public void AddData(){
@@ -73,6 +74,28 @@ public class MainActivity extends AppCompatActivity {
                             "Course Count: "+ cursor.getString(3) +"\n";
                 }
                 showMessage("Data: ", data);
+            }
+        });
+    }
+    public void ViewAll(){
+        buttonViewAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Cursor cursor = myDB.getAllData();
+                //small test
+                if (cursor.getCount() == 0){
+                    showMessage("Error", "Nothing found in DB");
+                    return;
+                }
+                StringBuffer buffer = new StringBuffer();
+
+                while (cursor.moveToNext()) {
+                    buffer.append("ID: "+cursor.getString(0)+"\n");
+                    buffer.append("NAME: "+cursor.getString(1)+"\n");
+                    buffer.append("EMAIL: "+cursor.getString(2)+"\n");
+                    buffer.append("CC: "+cursor.getString(3)+"\n\n");
+                }
+                showMessage("All data", buffer.toString());
             }
         });
     }
