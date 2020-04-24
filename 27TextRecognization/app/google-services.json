@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361042798512",
+    "firebase_url": "https://mlkitonline2.firebaseio.com",
+    "project_id": "mlkitonline2",
+    "storage_bucket": "mlkitonline2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361042798512:android:36a5b35108251678e09875",
+        "android_client_info": {
+          "package_name": "rupesh1310.github.textrecognization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361042798512-fpakt11mvnt987q228bl6gb9kqgtblm7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rupesh1310.github.textrecognization",
+            "certificate_hash": "bac1f2e3a7d50be1222868681ad665226a959f7b"
+          }
+        },
+        {
+          "client_id": "361042798512-4hsse5gmph0mqs9a6pdspks229n190ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8FP8en_FmC6jVWafZC4yLOE8El85x6Kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361042798512-4hsse5gmph0mqs9a6pdspks229n190ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
