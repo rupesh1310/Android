@@ -37,7 +37,7 @@ public class ResultDialog extends DialogFragment {
             }
         });
 
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return view;
 
 
     }
