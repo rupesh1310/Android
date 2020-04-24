@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492792529251",
+    "firebase_url": "https://myappie-ece0e.firebaseio.com",
+    "project_id": "myappie-ece0e",
+    "storage_bucket": "myappie-ece0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492792529251:android:9c9549d1f957b1c0e8d356",
+        "android_client_info": {
+          "package_name": "rupesh1310.github.fireaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492792529251-3ce1e73he7dehk9s24va1rcp6puvuq2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rupesh1310.github.fireaselogin",
+            "certificate_hash": "bac1f2e3a7d50be1222868681ad665226a959f7b"
+          }
+        },
+        {
+          "client_id": "492792529251-5ss2aknqfefgfjkr16t6749k6048outv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARY_WYHX9CfEGfg7HtGw7ypifBQjpC06c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492792529251-5ss2aknqfefgfjkr16t6749k6048outv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
